@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2? family = Source + Sans + Pro & display = swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Source+Sans+Pro&display=swap');
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing:  1.5px;
+}
+.contenedor{
+    margin: auto;
+    width: 90%;
+}
+/*estilos del header*/
+.header{
+    height: 60px;
+
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .icon-menu{
+    margin: -20px;
+    color: #fff;
+}
+.icon-menu{
+    display: block;
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    background: #fba919;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    
+}
+/*estilos del menu*/
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.menu__link{
+display: block;
+padding: 15px;
+background: darkred;
+text-decoration: none;
+color: #fff;
+}
+.menu__link:hover{
+    background: white;
+    color: darkred;
+}
+.mostrar{
+    left: 0;
+}
+.select{
+    background: white;
+    color:  darkred;  
+}
+/*Estilos del baner*/
+.baner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 30px;
+}
+.baner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.baner__txt{
+    display: none;
+}
+/*estilos de info*/
+.info__columna{
+    background: darkred;
+    color: #fff;
+    padding: 15px;
+margin-bottom: 30px;
+}
+ 
+ /*estilos cocreadores*/
+  .section__titulo{
+      text-align: center;
+      font-size: 30px;
+      color: darkred;
+  }
+  .contenedores__columna{
+      position: relative;
+    margin-bottom: 30%;
+  }
+  .contenedores__descripcion{
+     position: absolute; 
+top: 0;
+left: 0;
+color: #fff;
+background: rgba(0,0,0,0.5);
+width: 60%;
+height: 100%;  
+padding: 5px;
+}
+  .cocreadores__titulo{
+      font-size: 25px;
+      margin: 5px 0;
+
+  }
+  .cocreadores__img{
+      width: 100%;
+  }
+  /*estilos del footer*/
+  .footer{
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+  }
+  .footer [class^="icon-"]{
+      color: #333;
+      text-decoration: none;
+      font-size: 30px;
+      padding: 10px;
+      background: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      line-height: 40px;
+  }
+  /*estilos responsive*/
+@media(min-width:480px){
+    .logo{
+        font-size: 40px;
+
+    }
+    .baner__titulo{
+        font-size: 30px;
+    margin: 5px 0;
+    }
+    .baner__txt{
+    display: block;
+font-size: 18px;    
+margin: 7px 0;
+}
+.info, .cocreadores{
+    display: flex;
+justify-content: space-between;
+margin-top: -90px;
+}
+.info__columna{
+    width: 32%;
+}
+.info__titulo{
+    font-size: 30px;
+    margin: 5px 0;
+}.cocreadores{
+    flex-wrap: wrap;
+margin-top: 0;
+}
+.section__titulo{
+    width: 100%;
+}
+.contenedores__columna{
+    width: 48%;
+}
+}
+@media(min-width:768px){
+.baner__titulo{
+    font-size: 40px;
+}
+.cocreadores__titulo{
+    font-size: 40px;
+}
+}
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+    .baner__titulo{
+        font-size: 60px;
+    }
+    .cocreadores__titulo{
+        font-size: 50px;
+    }
+    .nav{
+position: static;
+width: auto;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu__link{
+        background: none;
+    font-size: 20px;
+    }
+    .select{
+        background: darkred;
+        color: #fff;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .info__titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    .cocreadores__titulo{
+        font-size: 50px;
+    margin: 0;
+    }
+    .section__titulo{
+        font-size: 50px;
+        margin: 20px 0;
+    }
+    .cocreadores__txt{
+        font-size: 20px;
+    }
+    .contenedores__descripcion{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    align-content: center;
+    }
+.info{
+    margin-top: -120px;
+}
+.info__columna{
+    padding: 30px;
+}
+    }
+    @media(min-width:1280px){
+        .contenedor{
+            width: 1200px;
+        }
+        .baner .contenedor{
+            top: 40px;
+        }
+        .info{
+            margin-top: -200px;
+        }
+.logo{
+    font-size: 60px;
+}
+    }
